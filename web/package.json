@@ -1,11 +1,23 @@
 {
-  "name": "ferrostar-web",
-  "module": "index.tsx",
+  "name": "web",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
-  "devDependencies": {
-    "bun-types": "latest"
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
+  "dependencies": {
+    "mapbox-gl": "npm:empty-npm-package@1.0.0",
+    "maplibre-gl": "^4.1.2",
+    "solid-element": "^1.8.0",
+    "solid-js": "^1.8.15",
+    "solid-map-gl": "^1.11.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-solid": "^2.10.2"
   }
 }
